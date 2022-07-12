@@ -4,6 +4,7 @@
     "description": "Build your e2e testing with puppeteer simple structure.",
     "author": "tienmi",
     "license": "MIT",
+    "type": "module",
     "dependencies": {
         "chalk": "^2.4.2",
         "commander": "^2.19.0",
@@ -16,5 +17,10 @@
         "psc": "bin/psc",
         "psc-init": "bin/psc-init",
         "psc-update": "bin/psc-update"
+    },
+    "homepage": "https://github.com/tienmi/puppeteer-simple-cli",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tienmi/puppeteer-simple-cli.git"
     }
 }
