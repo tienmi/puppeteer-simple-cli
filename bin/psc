@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+const program = require('commander');
+
+// 定義版本
+// 使用辦法
+// 指令
+program
+    .version(require('../package').version)
+    .usage('<command> [options]')
+    .command('init', 'Set up your environment')
+    .command('update', 'Update puppeteer-simple-cli-cores');
+
+// 解析命令
+program.parse(process.argv);

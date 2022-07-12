@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const chalk = require('chalk');
+const ora = require('ora');
+const shell = require('shelljs');
+
+program.usage('[project-name]');
+program.parse(process.argv);
+
+if (program.args.length < 1) return program.help();
+
+const APP_NAME = program.args[0];
+
+if (!APP_NAME) {
+    console.log(chalk.red('\n App name should not be empty! \n '));
+    return;
+}
+
+console.log(chalk.white('\n Start generating... \n'));
+
+const spinner = ora('Configuring app...');
+spinner.start();
+
+// step1
+shell.mkdir(`${APP_NAME}`);
+shell.cd(`${APP_NAME}`);
+shell.exec(`git init`);
+shell.exec('git remote add psc-structure https://github.com/tienmi/puppeteer-simple-structure.git');
+shell.exec('git pull psc-structure master');
+shell.exec('git remote remove psc-structure');
+shell.exec(`npm install`);
+
+// step2
+shell.exec(`sed "s/puppeteer-structure/${APP_NAME}/g" package.json > buck`);
+shell.exec(`mv buck package.json`);
+shell.exec();
+console.log(chalk.white('\nInstalling must-have dependencies...\n'));
+
+// end
+spinner.succeed();
+console.log(chalk.green('\n Initialization successful!\n Why not grab a beer and have fun!'));

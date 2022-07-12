@@ -1,0 +1,20 @@
+{
+    "name": "puppeteer-simple-cli",
+    "version": "1.0.0",
+    "description": "Build your e2e testing with puppeteer simple structure.",
+    "author": "tienmi",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^2.4.2",
+        "commander": "^2.19.0",
+        "download": "^7.1.0",
+        "inquirer": "^6.2.2",
+        "ora": "^3.2.0",
+        "shelljs": "^0.8.3"
+    },
+    "bin": {
+        "psc": "bin/psc",
+        "psc-init": "bin/psc-init",
+        "psc-update": "bin/psc-update"
+    }
+}
