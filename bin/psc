@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const program = require('commander');
+import program from 'commander';
 
 // 定義版本
 // 使用辦法

@@ -9,7 +9,7 @@
         "commander": "^2.19.0",
         "download": "^7.1.0",
         "inquirer": "^6.2.2",
-        "ora": "^3.2.0",
+        "ora": "^6.1.2",
         "shelljs": "^0.8.3"
     },
     "bin": {
