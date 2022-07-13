@@ -1,7 +1,5 @@
 # Puppeteer-simple-cli
 
-## Status
-
 Puppeteer-simple-cli is a really simple puppeteer tool for End to End test.
 
 ### Get Started
@@ -48,7 +46,8 @@ module.exports = {
         }
     ],
     config: { headless: false, slowMo: 50, defaultViewport: null }, // Puppeteer config
-    retry: 1  // Number of retries
+    retry: 1,  // Number of retries
+    getClientLog: false // Whether to accept client log
 };
 ```
 
