@@ -15,42 +15,40 @@ npm i -g puppeteer-simple-cli
 ##### Information
 
 ```
-$psc
+$ psc
 ```
 
 ##### Create a project
 
 ```
-$psc init <project-name>
+$ psc init <project-name>
 ```
 
 ##### Update puppeteer-simple-cli-cores
 
 ```
-$psc update
+$ psc update
 ```
 
 ##### Start testing
 
 ```
-npm run test
+$ npm run test
 ```
 
-##### create src/main.config.js and addition config
+##### Create src/main.config.js and addition config
 
 ```
 module.exports = {
     targetURL: '', // It's your target URL
-    pipelines: [
+    pipelines: [ // Execute your situation in order
         {
-            name: 'stepName',
-            path: 'your script path',
-            retry: 0, // number of retries
-            reload: false // true is page reload
+            title: 'Situation description',
+            path: 'Your script path'
         }
     ],
-    config: { headless: false, slowMo: 50, defaultViewport: null },
-    retry: 1
+    config: { headless: false, slowMo: 50, defaultViewport: null }, // Puppeteer config
+    retry: 1  // Number of retries
 };
 ```
 
