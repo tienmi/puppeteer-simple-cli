@@ -4,13 +4,12 @@
     "description": "Build your e2e testing with puppeteer simple structure.",
     "author": "tienmi",
     "license": "MIT",
-    "type": "module",
     "dependencies": {
-        "chalk": "^2.4.2",
+        "chalk": "^4.1.2",
         "commander": "^2.19.0",
         "download": "^7.1.0",
         "inquirer": "^6.2.2",
-        "ora": "^6.1.2",
+        "ora": "^5.4.1",
         "shelljs": "^0.8.3"
     },
     "bin": {
