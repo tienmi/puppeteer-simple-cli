@@ -12,13 +12,31 @@ npm i -g puppeteer-simple-cli
 
 #### Basic usage
 
-Start testing
+##### Information
+
+```
+$psc
+```
+
+##### Create a project
+
+```
+$psc init <project-name>
+```
+
+##### Update puppeteer-simple-cli-cores
+
+```
+$psc update
+```
+
+##### Start testing
 
 ```
 npm run test
 ```
 
-create src/main.config.js and addition config
+##### create src/main.config.js and addition config
 
 ```
 module.exports = {
