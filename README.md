@@ -1,6 +1,6 @@
 # Puppeteer-simple-cli
 
-Puppeteer-simple-cli is a really simple puppeteer tool for End to End test.
+Puppeteer-simple-cli is a really simple puppeteer tool for End to End test. Integrate lint-related tools and preset a high-maintenance test architecture.
 
 ### Get Started
 
@@ -13,25 +13,25 @@ npm i -g puppeteer-simple-cli
 ##### Information
 
 ```
-$ psc
+psc
 ```
 
 ##### Create a project
 
 ```
-$ psc init <project-name>
+psc init <project-name>
 ```
 
 ##### Update puppeteer-simple-cli-cores
 
 ```
-$ psc update
+psc update
 ```
 
 ##### Start testing
 
 ```
-$ npm run test
+npm run test
 ```
 
 ##### Create src/main.config.js and addition config
