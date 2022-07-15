@@ -1,6 +1,6 @@
 {
     "name": "puppeteer-simple-cli",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Build your e2e testing with puppeteer simple structure.",
     "author": "tienmi",
     "license": "MIT",
